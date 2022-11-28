@@ -56,8 +56,8 @@ Aşağıdaki sorgu senaryolarını dvdrental örnek veri tabanı üzerinden ger�
 * film tablosunda bulunan tüm sütunlardaki verilerden title 'C' karakteri ile başlayan ve uzunluğu (length) 90 dan büyük olan ve rental_rate 2.99 olan verileri sıralayınız.
 Kolay Gelsin.
 
-***
 
+***
 ```sql
 SELECT country FROM country WHERE country LIKE 'A%a';
 SELECT country FROM country WHERE country LIKE '______%n';
