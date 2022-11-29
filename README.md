@@ -86,3 +86,33 @@ SELECT COUNT(title) FROM film where title LIKE 'T%' AND rating = 'G';
 SELECT COUNT(country) FROM country where country LIKE '_____';
 SELECT COUNT(city) FROM city where city ILIKE '%R';
 ```
+# Ödev 5
+
+Merhabalar,
+
+Aşağıdaki sorgu senaryolarını dvdrental örnek veri tabanı üzerinden gerçekleştiriniz.
+
+* film tablosunda bulunan ve film ismi (title) 'n' karakteri ile biten en uzun (length) 5 filmi sıralayınız.
+* film tablosunda bulunan ve film ismi (title) 'n' karakteri ile biten en kısa (length) ikinci(6,7,8,9,10) 5 filmi(6,7,8,9,10) sıralayınız.
+* customer tablosunda bulunan last_name sütununa göre azalan yapılan sıralamada store_id 1 olmak koşuluyla ilk 4 veriyi sıralayınız.
+Kolay Gelsin.
+
+***
+
+```sql
+SELECT title FROM film
+WHERE title LIKE '%n'
+ORDER BY length DESC
+LIMIT 5;
+--
+SELECT title FROM film
+WHERE title LIKE '%n'
+ORDER BY length ASC
+LIMIT 5
+OFFSET 5;
+--
+SELECT last_name, store_id FROM customer
+WHERE store_id = 1
+ORDER BY last_name
+LIMIT 4;
+```
