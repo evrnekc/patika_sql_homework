@@ -142,7 +142,7 @@ SELECT COUNT(DISTINCT replacement_cost) FROM film
 WHERE length > 150;
 ```
 
-Ödev 1
+# Ödev 7
 Merhabalar,
 
 Aşağıdaki sorgu senaryolarını dvdrental örnek veri tabanı üzerinden gerçekleştiriniz.
