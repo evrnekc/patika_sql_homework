@@ -1,3 +1,6 @@
+-- For more information see odev8.md in patika_sql_homework repository
+-- Açıklamalar için patika_sql_homework reposundaki odev8.md dosyasına bakabilirsiniz.
+
 -- Creating table
 CREATE TABLE employee(
     id INTEGER PRIMARY KEY,
